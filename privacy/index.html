@@ -66,8 +66,8 @@ goals, health conditions, allergies, diet and cuisine preferences, meals per day
 preferences and an optional profile photo. The app uses these to calculate your nutrition targets and recommend meals.</p>
 
 <h3>Meals, plans and grocery lists</h3>
-<p>Meals you mark as eaten (with their nutrition), meals you skip or choose, grocery list items and the number of water
-glasses you log.</p>
+<p>Meals you mark as eaten (with their nutrition), meals you skip or choose, recipes you favorite or mark “Not for me”,
+grocery list items and the number of water glasses you log.</p>
 
 <h3>Health readings</h3>
 <p>Weight, blood sugar and HbA1c readings that you log in the app or allow it to read from Apple Health.</p>
@@ -89,7 +89,8 @@ status, but never your payment details.</p>
 <ul>
   <li><strong>On your device.</strong> Everything above is stored locally in the app.</li>
   <li><strong>In your iCloud.</strong> If you’re signed in to iCloud, your profile, meal logs, plans and grocery lists are
-    synced through Apple’s iCloud (CloudKit) to your private iCloud database so they’re available on your other devices.
+    synced through Apple’s iCloud (CloudKit) to your private iCloud database, and your favorite and hidden recipes through
+    iCloud key-value storage, so they’re available on your other devices.
     This data is stored in your iCloud account under Apple’s
     <a href="https://www.apple.com/legal/privacy/">privacy policy</a>; we have no access to it.</li>
   <li><strong>Health readings stay on this device.</strong> They are kept in a separate, device-only store and are never
@@ -145,7 +146,7 @@ Like any internet service, they can see your device’s IP address when the app 
 <h2>Deleting your data</h2>
 <p>In the app, go to <strong>Settings → Delete Account</strong> (or <strong>Delete My Data</strong> if you haven’t signed in).
 This permanently deletes your NutriPlan account from Firebase Authentication, revokes Sign in with Apple access if you used it,
-and erases your profile, logs, plans, grocery lists and health readings from your device and your iCloud. It can’t be undone.</p>
+and erases your profile, logs, plans, favorite and hidden recipes, grocery lists and health readings from your device and your iCloud. It can’t be undone.</p>
 <ul>
   <li>Deleting your account doesn’t cancel a NutriPlan Plus subscription. Manage subscriptions in your Apple Account settings.</li>
   <li>Readings stored in Apple Health belong to the Health app and are not deleted; manage them in the Health app.</li>
